@@ -1,24 +1,97 @@
 @charset "utf-8";
+
 /* CSS Document
 HTML and Body Styles*/
-html{background-color:hsla(187,68%,75%,0.85)}
+html{background-color:hsla(108,100%,35%,1.00)}
 body{color:rgba(6,6,6,1.00);
-	background-color:#ECECEC;
-	font-size: 1em
+	background-color:#AEFBBB;
+	font-size: 1em;
+	width: 92%;
+	margin-left:auto;
+	margin-right:auto;	
 	}
+
+
+/*header 1*/
 header {color: black}
-h1 {color: black; 
-	text-align: left;
-	font-size: 240%;
-	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+h1 {color: black;
+	background-color:#DAE385;
+	text-align: center;
+	font-size: 300%;
+	font-family:cursive;
 	}
+
+/*header 2*/
 h2 {color: black; 
 	font-size: 180%;
-	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	}
+
+
+/* nav ul*/
 nav ul{color: #0C2FD1;
+	background-color:aliceblue;
 	padding-bottom:10px;
 	list-style-type: none;
-	padding-left: 10px;}
+	padding-left: 10px;
+}
+ul{
+	list-style-type:none;
+	margin:10px;
+	padding:10px;
+	overflow:hidden
+}
+ul li{
+	float: left;
+}
+ul li a{
+	display:block;
+	color: #0C2FD1;
+	text-align: left;
+	padding: 10px 200px;
+	text-decoration:none;
+}
+ul li a:hover{
+	background-color:#A6FCF8;
+}
+
+
+/*Section*/
 section {color:black}
-footer {color: black ; text-align: center}
+section#leftcolumn{
+	clear:left;
+	float:left;
+	width:40%;
+}
+section#rightcolumn {
+	clear:right;
+	float:right;
+	overflow:auto;
+	width:40%;
+}
+section#rightcolumn::after{
+	clear:both;
+	content:"";
+	display:table;
+	margin: 1% 1% 1% 1%;
+}
+section#leftcolumn::after{
+	clear:both;
+	content:"";
+	display:table;
+	margin: 1% 1% 1% 1%;
+}
+
+body>footer::after{
+	clear:both;
+	content:"";
+	display:table;
+}
+
+
+/*footer*/
+footer {
+	color: black;
+	clear:left;
+	background-color:#DAE385;
+	}
